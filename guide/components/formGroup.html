@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼블리싱 가이드</title>
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/guide/layout.css">
+    <link rel="stylesheet" href="../../assets/css/guide/common.css">
+    <link rel="stylesheet" href="../../assets/css/components/common.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="b-header  flex align-center">
+            <div class="b-header-area flex align-center space-between">
+                <h3 class="b-logo"><a href="/guide/index.html">SHsoftnet</a></h3>
+                <nav class="b-snb">
+                    <ul class="flex align-center">
+                        <li><a href="">가이드</a></li>
+                        <li><a href="">페이지</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container">
+            <aside class="g-aside">
+                <div class="g-sub-container">
+                    <nav class="g-snb">
+                        <a href="#" class="">Font</a>
+                        <ul class="g-depth1">
+                            <li class=""><a href="../../guide/components/fontSize.html">FontSize</a></li>
+                            <li class=""><a href="../../guide/components/fontFamily.html">Font Family</a></li>
+                        </ul>
+
+                        <a href="#" class="">Forms</a>
+                        <ul class="g-depth1">
+                            <li class=""><a href="../../guide/components/form.html">FormElements</a></li>
+                            <li class="active"><a href="../../guide/components/formGroup.html">Form Group</a></li>
+                            <li class=""><a href="../../guide/components/formMixin.html">Form Patterns</a></li>
+                        </ul>
+                        <a href="#">Elements</a>
+
+                        <ul class="g-depth1">
+                            <li class=""><a href="../../guide/components/button.html">Buttons</a></li>
+                            <li class=""><a href="../../guide/components/icon.html">Icons</a></li>
+                            <li class=""><a href="../../guide/components/badge.html">Badges</a></li>
+                            <li class=""><a href="../../guide/components/paragraph.html">Paragraph</a></li>
+                        </ul>
+
+                        <a href="#">Collections</a>
+                        <ul class="g-depth1">
+                            <li class=""><a href="../../guide/components/path.html">Path</a></li>
+                            <li class=""><a href="../../guide/components/list.html">Lists</a></li>
+                            <li class=""><a href=".../../guide/components/card.html">Cards</a></li>
+                            <li class=""><a href="../../guide/components/nav.html">Nav</a></li>
+                            <li class=""><a href="../../guide/components/step.html">Steps</a></li>
+                            <li class=""><a href="../../guide/components/tabel.html">Tables</a></li>
+                            <li class=""><a href="">Paginations</a></li>
+                        </ul>
+
+                        <a href="#">Patters</a>
+                        <ul class="g-depth1">
+                            <li class=""><a href="">BoardList</a></li>
+                            <li class=""><a href="">BoardView</a></li>
+                            <li class=""><a href="">Comment</a></li>
+                            <li class=""><a href="">Chat</a></li>
+                            <li class=""><a href="">Feed</a></li>
+                            <li class=""><a href="">Staticstic</a></li>
+                        </ul>
+
+                        <a href="#">Modules</a>
+                        <ul class="g-depth1">
+                            <li class=""><a href="">Accordion</a></li>
+                            <li class=""><a href="">Folder</a></li>
+                            <li class=""><a href="">Tooltip</a></li>
+                            <li class=""><a href="">Dropdown</a></li>
+                            <li class=""><a href="">Tab</a></li>
+                            <li class=""><a href="">Popup</a></li>
+                            <li class=""><a href="">Sticky</a></li>
+                            <li class=""><a href="">Spy Scroll</a></li>
+                            <li class=""><a href="">Custom Scroll</a></li>
+                            <li class=""><a href="">Sidebar</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+            <article class="g-article">
+                <div class="g-article-container">
+                    <div class="g-title-area">
+                        <h1 class="g-h1">Form</h1>
+                    </div>
+
+                    <section class="g-section">
+                        <div class="g-section-container">
+                            <div class="g-content-header">
+                                <h2 class="g-h2">Form Group</h2>
+                            </div>
+
+                            <div class="g-content-body">
+                                <h3 class="g-h3 mt10">type-row</h3>
+                                <div class="g-example-container">
+
+                                    <div class="g-example-header">
+                                        <div class="g-example-preview">
+                                            <div class="form type-row">
+                                                <div class="form-container">
+                                                    <div class="form-title">
+                                                        <label for="id" class="form-label">아이디</label>
+                                                    </div>
+                                                    <div class="form-content">
+                                                        <div class="form-controls flexible">
+                                                            <input type="text" name="" id="id" class="form-input">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-desc">
+                                                    <p>Description Message</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="form type-row">
+                                                <div class="form-container">
+                                                    <div class="form-title">
+                                                        <label for="pwd" class="form-label">비밀번호</label>
+                                                    </div>
+                                                    <div class="form-content">
+                                                        <div class="form-controls flexible">
+                                                            <input type="text" name="" id="pwd" class="form-input">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-alert is-errored is-visibled">
+                                                    <p>Error Message</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="g-example-body">
+                                        <div class="g-example-nav mtb20">
+                                            <button class="g-example-btn html-btn">HTML</button>
+                                            <button class="g-example-btn css-btn">CSS</button>
+
+                                        </div>
+                                    </div>
+                                    <div id="htmlCode" class="g-example-footer hidden">
+                                        <div class="syntaxhighlighter html">
+                                            <table cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="code">
+                                                            <div class="container">
+                                                                <div class="line number1 index0 alt2">
+                                                                    <code class="plain">&lt;</code>
+                                                                    <code class="keyword">div</code>
+                                                                    <code class="plain">&gt;&lt;</code>
+                                                                    <code class="keyword">input</code>
+                                                                    <code class="color1">type</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">"text"</code>
+                                                                    <code class="color1">name</code>
+                                                                    <code class="string">""</code>
+                                                                    <code class="color1">id</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">""</code>
+                                                                    <code class="color1">value</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">""</code>
+                                                                    <code class="color1">placeholder</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">"Placeholder"</code>
+                                                                    <code class="color1">class</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">"form-input"</code>
+                                                                    <code class=" plain">&gt;&lt;/</code>
+                                                                    <code class="html keyword">div</code>
+                                                                    <code class=" plain">&gt;</code>
+                                                                </div>
+
+                                                                <div class="line number3 index2 alt2">
+                                                                    <code class="plain">&lt;</code>
+                                                                    <code class="keyword">input</code>
+                                                                    <code class="color1">type</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">"text"</code>
+                                                                    <code class="color1">name</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">""</code>
+                                                                    <code class="color1">id</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">""</code>
+                                                                    <code class="color1">value</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">""</code>
+                                                                    <code class="color1">placeholder</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">"Readonly"</code>
+                                                                    <code class="color1">title</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">"제목"</code>
+                                                                    <code class="color1">class</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">"form-input"</code>
+                                                                    <code class="color1">readonly</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">""</code>
+                                                                    <code class="plain">&gt;</code>
+                                                                </div>
+                                                                <div class="line number4 index3 alt1">
+                                                                    <code class="plain">&lt;</code>
+                                                                    <code class="keyword">input</code>
+                                                                    <code class="color1">type</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">"text"</code>
+                                                                    <code class="color1">name</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">"sText1"</code>
+                                                                    <code class="color1">id</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">""</code>
+                                                                    <code class="color1">value</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">""</code>
+                                                                    <code class="color1">placeholder</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">"Disabled"</code>
+                                                                    <code class="color1">title</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">"제목"</code>
+                                                                    <code class="color1">class</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">"form-input"</code>
+                                                                    <code class="color1">disabled</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">""</code>
+                                                                    <code class="plain">&gt;</code>
+                                                                </div>
+                                                                <div class="line number5 index4 alt2">
+                                                                    <code class=" plain">&lt;</code>
+                                                                    <code class="keyword">textarea</code>
+                                                                    <code class="color1">rows</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">"3"</code>
+                                                                    <code class="color1">cols</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">"50"</code>
+                                                                    <code class="color1">class</code>
+                                                                    <code class="plain">=</code>
+                                                                    <code class="string">"form-input"</code>
+                                                                    <code class="plain">&gt;&lt;/</code>
+                                                                    <code class="keyword">textarea</code>
+                                                                    <code class=" plain">&gt;</code>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                    <div id="cssCode" class="g-example-footer hidden" data-index=1>
+                                        <div class="syntaxhighlighter css">
+                                            <table cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="code">
+                                                            <div class="container">
+                                                                <div class="line number1 index0 alt2"><code
+                                                                        class="comments">/* Form */</code>
+                                                                </div>
+                                                                <div class="line number2 index1 alt1">
+                                                                    <code class="plain">.form-input {</code>
+                                                                    <code class="keyword">padding</code>
+                                                                    <code class="plain">:</code>
+                                                                    <code class="value">10px</code>
+                                                                    <code class="keyword">height</code>
+                                                                    <code class="plain">:</code>
+                                                                    <code class="value">45px</code>
+                                                                    <code class="keyword">border</code>
+                                                                    <code class="plain">:</code>
+                                                                    <code class="value">1px solid #ddd</code>
+                                                                    <code class="plain">; </code>
+                                                                    <code class="keyword">font-size</code>
+                                                                    <code class="plain">:</code>
+                                                                    <code class="value">16px</code>
+                                                                    <code class="plain">;}</code>
+                                                                </div>
+                                                                <div class="line number3 index2 alt2">
+                                                                    <code class="plain">textarea.form-input {</code>
+                                                                    <code class="keyword">padding</code>
+                                                                    <code class="plain">:</code>
+                                                                    <code class="value">10px</code>
+                                                                    <code class="keyword">height</code>
+                                                                    <code class="plain">:</code>
+                                                                    <code class="value">auto</code>
+                                                                    <code class="keyword">border</code>
+                                                                    <code class="plain">:</code>
+                                                                    <code class="value">1px solid #ddd</code>
+                                                                    <code class="plain">; </code>
+                                                                    <code class="keyword">border-radius</code>
+                                                                    <code class="plain">:</code>
+                                                                    <code class="value">5px</code>
+                                                                    <code class="plain">; </code>
+                                                                    <code class="keyword">font-size</code>
+                                                                    <code class="plain">:</code>
+                                                                    <code class="value">16px</code>
+                                                                    <code class="plain">;}</code>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3 class="g-h3 mt50">type-col</h3>
+                                <div class="g-example-container">
+
+                                    <div class="g-example-header">
+                                        <div class="g-example-preview">
+                                            <div class="form type-col">
+                                                <div class="form-container">
+                                                    <div class="form-title">
+                                                        <label for="id" class="form-label">아이디</label>
+                                                    </div>
+                                                    <div class="form-content">
+                                                        <div class="form-controls flexible">
+                                                            <input type="text" name="" id="id" class="form-input">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form type-col mt10">
+                                                <div class="form-container">
+                                                    <div class="form-title">
+                                                        <label for="pwd" class="form-label">비밀번호</label>
+                                                    </div>
+                                                    <div class="form-content">
+                                                        <div class="form-controls flexible">
+                                                            <input type="text" name="" id="pwd" class="form-input">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="g-example-body">
+                                        <div class="g-example-nav mtb20">
+                                            <button class="g-example-btn html-btn">HTML</button>
+                                            <button class="g-example-btn css-btn">CSS</button>
+
+                                        </div>
+                                    </div>
+                                    <div id="htmlCode" class="g-example-footer hidden">
+                                        <div class="syntaxhighlighter html">
+                                            <table cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="code">
+                                                            <div class="container">
+                                                                <div class="line number1 index0 alt2">
+                                                                    <pre>
+<code class="plain">&lt;</code><code class="keyword">div&nbsp;</code><code class="color1">class</code><code class="plain">=</code><code class="string">"form type-col"</code><code class="plain">&gt;</code>
+    <code class="plain">&lt;</code><code class="keyword">div&nbsp;</code> <code class="color1">class</code><code class="plain">=</code><code class="string">"form-container"</code><code class="plain">&gt;</code>
+        <code class="plain">&lt;</code><code class="keyword">div&nbsp;</code><code class="color1">class</code><code class="plain">=</code><code class="string">"form-title"</code><code class="plain">&gt;</code>
+            <code class="plain">&lt;</code><code class="keyword">label&nbsp;</code><code class="color1">for</code><code class="plain">=</code><code class="string">"id"</code>&nbsp;<code class="color1">class</code><code class="plain">=</code><code class="string">"form-label"</code><code class="plain">&lt;/</code><code class="keyword">label</code><code class=" plain">&gt;</code> 
+        <code class="plain">&lt;/</code><code class="keyword">div</code><code class=" plain">&gt;</code>                                                     
+        <code class="plain">&lt;</code><code class="keyword">div&nbsp;</code><code class="color1">class</code><code class="plain">=</code><code class="string">"form-content"</code><code class="plain">&gt;</code>
+            <code class="plain">&lt;</code><code class="keyword">div&nbsp;</code><code class="color1">class</code><code class="plain">=</code><code class="string">"form-controls flexible"</code><code class="plain">&gt;</code>
+                <code class="plain">&lt;</code><code class="keyword">input&nbsp;</code><code class="color1">type</code><code class="plain">=</code><code class="string">"text"</code>&nbsp;<code class="color1">name</code><code class="plain">=</code><code class="string">""</code>&nbsp;<code class="color1">id</code><code class="plain">=</code><code class="string">"id"</code>&nbsp;<code class="color1">class</code><code class="plain">=</code><code class="string">"form-input"</code><code class="plain">&gt;</code>
+            <code class="plain">&lt;/</code><code class="keyword">div</code><code class=" plain">&gt;</code>     
+        <code class="plain">&lt;/</code><code class="keyword">div</code><code class=" plain">&gt;</code>   
+    <code class="plain">&lt;/</code><code class="keyword">div</code><code class=" plain">&gt;</code>   
+<code class="plain">&lt;/</code><code class="keyword">div</code><code class=" plain">&gt;</code></pre>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                    <div id="cssCode" class="g-example-footer hidden" data-index=1>
+                                        <div class="syntaxhighlighter css">
+                                            <table cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="code">
+                                                            <div class="container">
+                                                                <div class="line number1 index0 alt2"><code
+                                                                        class="comments">/* Form */</code>
+                                                                </div>
+                                                                <div class="line number2 index1 alt1">
+                                                                    <code
+                                                                        class="plain">.form.type-col .form-container {</code>
+                                                                    <code class="keyword">display</code>
+                                                                    <code class="plain">:</code>
+                                                                    <code class="value">flex</code>
+                                                                    <code class="plain">;</code>
+                                                                    <code class="keyword">align-items</code>
+                                                                    <code class="plain">:</code>
+                                                                    <code class="value">center</code>
+                                                                    <code class="plain">;}</code>
+                                                                </div>
+                                                                <div class="line number3 index2 alt2">
+                                                                    <code
+                                                                        class="plain">.form.type-col .form-container .form-title {</code>
+                                                                    <code class="keyword">width</code>
+                                                                    <code class="plain">:</code>
+                                                                    <code class="value">100px</code>
+                                                                    <code class="plain">;}</code>
+                                                                </div>
+                                                                <div class="line number4 index2 alt2">
+                                                                    <code
+                                                                        class="plain">.form.type-col .form-container .form-content,</code><br>
+                                                                    <code
+                                                                        class="plain">.form.type-col .form-container .form-content input {</code>
+                                                                    <code class="keyword">width</code>
+                                                                    <code class="plain">:</code>
+                                                                    <code class="value">100%</code>
+                                                                    <code class="plain">;}</code>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </div>
+        <script src="../../assets/js/guide/guide.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼블리싱 가이드</title>
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/guide/layout.css">
+    <link rel="stylesheet" href="../../assets/css/guide/common.css">
+    <link rel="stylesheet" href="../../assets/css/components/common.css">
+</head>
+
+<body>
+    <div class="wrap">
+
+        <header class="b-header  flex align-center">
+            <div class="b-header-area flex align-center space-between">
+                <h3 class="b-logo"><a href="/guide/index.html">SHsoftnet</a></h3>
+                <nav class="b-snb">
+                    <ul class="flex align-center">
+                        <li><a href="">가이드</a></li>
+                        <li><a href="">페이지</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container">
+            <aside class="g-aside">
+                <div class="g-sub-container">
+                    <nav class="g-snb">
+                        <a href="#" class="">Font</a>
+                        <ul class="g-depth1">
+                            <li class=""><a href="../../guide/components/fontSize.html">FontSize</a></li>
+                            <li class=""><a href="../../guide/components/fontFamily.html">Font Family</a></li>
+                        </ul>
+
+                        <a href="#" class="">Forms</a>
+                        <ul class="g-depth1">
+                            <li class=""><a href="../../guide/components/form.html">FormElements</a></li>
+                            <li class=""><a href="../../guide/components/formGroup.html">Form Group</a></li>
+                            <li class=""><a href="../../guide/components/formMixin.html">Form Patterns</a></li>
+                        </ul>
+                        <a href="#">Elements</a>
+
+                        <ul class="g-depth1">
+                            <li class=""><a href="../../guide/components/button.html">Buttons</a></li>
+                            <li class=""><a href="../../guide/components/icon.html">Icons</a></li>
+                            <li class=""><a href="../../guide/components/badge.html">Badges</a></li>
+                            <li class=""><a href="../../guide/components/paragraph.html">Paragraph</a></li>
+                        </ul>
+
+                        <a href="#">Collections</a>
+                        <ul class="g-depth1">
+                            <li class=""><a href="../../guide/components/path.html">Path</a></li>
+                            <li class=""><a href="../../guide/components/list.html">Lists</a></li>
+                            <li class=""><a href=".../../guide/components/card.html">Cards</a></li>
+                            <li class=""><a href="../../guide/components/nav.html">Nav</a></li>
+                            <li class=""><a href="../../guide/components/step.html">Steps</a></li>
+                            <li class=""><a href="../../guide/components/tabel.html">Tables</a></li>
+                            <li class="active"><a href="../../guide/components/pagiNation.html">Paginations</a></li>
+                            <li class=""><a href="../../guide/components/modal.html">Modal</a></li>
+                        </ul>
+
+                        <a href="#">Modules</a>
+                        <ul class="g-depth1">
+                            <li class=""><a href="">Accordion</a></li>
+                            <li class=""><a href="">Folder</a></li>
+                            <li class=""><a href="">Tooltip</a></li>
+                            <li class=""><a href="">Dropdown</a></li>
+                            <li class=""><a href="">Tab</a></li>
+                            <li class=""><a href="">Popup</a></li>
+                            <li class=""><a href="">Sticky</a></li>
+                            <li class=""><a href="">Spy Scroll</a></li>
+                            <li class=""><a href="">Custom Scroll</a></li>
+                            <li class=""><a href="">Sidebar</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+            <article class="g-article">
+                <div class="g-article-container">
+                    <div class="g-title-area">
+                        <h1 class="g-h1">Paginations</h1>
+                    </div>
+
+                    <section class="g-section">
+                        <div class="g-section-container">
+                            <div class="g-content-header">
+                                <h2 class="g-h2">Basic</h2>
+                            </div>
+
+                            <div class="g-content-body">
+                                <div class="g-example-container">
+                                    <div class="g-example-header">
+                                        <div class="g-example-preview">
+                                            <div class="paging-list-area style-1">
+                                                <div class="page-group">
+                                                    <button type="button" class="btn first" title="처음 페이지">
+                                                        <i class="">처음</i>
+                                                    </button>
+                                                    <button type="button" class="btn prev" title="이전 페이지">
+                                                        <i class="">이전</i>
+                                                    </button>
+                                                </div>
+                                                <ol class="paging">
+                                                    <li class="page-item font num active">1</li>
+                                                    <li class="page-item font num">2</li>
+                                                    <li class="page-item font num">3</li>
+                                                    <li class="page-item font num">4</li>
+                                                    <li class="page-item font num">5</li>
+                                                </ol>
+                                                <div class="page-group">
+                                                    <button type="button" class="btn next" title="이후 페이지">
+                                                        <i class="">이후</i>
+                                                    </button>
+                                                    <button type="button" class="btn end" title="마지막 페이지">
+                                                        <i class="">마지막</i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="g-example-body">
+                                            <div class="g-example-nav mtb20">
+                                                <button class="g-example-btn html-btn">HTML</button>
+                                                <button class="g-example-btn css-btn">CSS</button>
+                                            </div>
+                                        </div>
+                                        <div id="htmlCode" class="g-example-footer hidden">
+                                            <div class="syntaxhighlighter html">
+                                                <table cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="code">
+                                                                <div class="container">
+                                                                    <div class="line number1 index0 alt2">
+                                                                        <pre>
+<code class="html comments">&lt;!-- 하이픈 --&gt;</code>
+<code class="plain">&lt;</code><code class="keyword">ul&nbsp;</code><code class="color1">class</code><code class="plain">=</code><code class="string">"paragraph hyphen"</code><code class="plain">&gt;</code>
+    <code class="plain">&lt;</code><code class="keyword">li&nbsp;</code><code class="plain">&gt;</code>목록 텍스트<code class="plain">&lt;/</code><code class="keyword">li</code><code class="plain">&gt;</code>
+<code class="plain">&lt;/</code><code class="keyword">ul</code><code class="plain">&gt;</code>
+
+<code class="html comments">&lt;!-- 별 --&gt;</code>
+<code class="plain">&lt;</code><code class="keyword">ul&nbsp;</code><code class="color1">class</code><code class="plain">=</code><code class="string">"paragraph star"</code><code class="plain">&gt;</code>
+    <code class="plain">&lt;</code><code class="keyword">li&nbsp;</code><code class="plain">&gt;</code>목록 텍스트<code class="plain">&lt;/</code><code class="keyword">li</code><code class="plain">&gt;</code>
+<code class="plain">&lt;/</code><code class="keyword">ul</code><code class="plain">&gt;</code>
+
+<code class="html comments">&lt;!-- 당구장 --&gt;</code>
+<code class="plain">&lt;</code><code class="keyword">ul&nbsp;</code><code class="color1">class</code><code class="plain">=</code><code class="string">"paragraph bill"</code><code class="plain">&gt;</code>
+    <code class="plain">&lt;</code><code class="keyword">li&nbsp;</code><code class="plain">&gt;</code>목록 텍스트<code class="plain">&lt;/</code><code class="keyword">li</code><code class="plain">&gt;</code>
+<code class="plain">&lt;/</code><code class="keyword">ul</code><code class="plain">&gt;</code>
+</pre>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                        <div id="cssCode" class="g-example-footer hidden">
+                                            <div class="syntaxhighlighter css">
+                                                <table cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="code">
+                                                                <div class="container">
+                                                                    <div class="line number1 index0 alt2"><code
+                                                                            class="comments">/* BADGE */</code>
+                                                                    </div>
+                                                                    <div class="line">
+                                                                        <code class="plain">.paragraph>li {</code>
+                                                                        <code class="keyword">display</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">table</code>
+                                                                        <code class="plain">;}</code>
+                                                                    </div>
+
+                                                                    <div class="line">
+                                                                        <code
+                                                                            class="plain">.paragraph>li:before {</code>
+                                                                        <code class="keyword">content</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">""</code>
+                                                                        <code class="plain">; </code>
+                                                                        <code class="keyword">display</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">table-cell</code>
+                                                                        <code class="plain">; </code>
+                                                                        <code class="keyword">padding-right</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">5px</code>
+                                                                        <code class="plain">;}</code>
+                                                                    </div>
+
+                                                                    <div class="line">
+                                                                        <code
+                                                                            class="plain">.paragraph.hyphen>li::before {</code>
+                                                                        <code class="keyword">content</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">"-"</code>
+                                                                        <code class="plain">;}</code>
+                                                                    </div>
+
+                                                                    <div class="line">
+                                                                        <code
+                                                                            class="plain">.paragraph.star>li::before {</code>
+                                                                        <code class="keyword">content</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">"*"</code>
+                                                                        <code class="plain">;}</code>
+                                                                    </div>
+
+                                                                    <div class="line">
+                                                                        <code
+                                                                            class="plain">.paragraph.bill>li::before {</code>
+                                                                        <code class="keyword">content</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">"※"</code>
+                                                                        <code class="plain">;}</code>
+                                                                    </div>
+
+                                                                </div>
+                                                            </td>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="g-example-container">
+                                    <div class="g-example-header">
+                                        <div class="g-example-preview">
+                                            <div class="paging-list-area style-2">
+                                                <div class="page-group">
+                                                    <button type="button" class="btn first" title="처음 페이지">
+                                                        <i class="">처음</i>
+                                                    </button>
+                                                    <button type="button" class="btn prev" title="이전 페이지">
+                                                        <i class="">이전</i>
+                                                    </button>
+                                                </div>
+                                                <ol class="paging">
+                                                    <li class="page-item font num active">1</li>
+                                                    <li class="page-item font num">2</li>
+                                                    <li class="page-item font num">3</li>
+                                                    <li class="page-item font num">4</li>
+                                                    <li class="page-item font num">5</li>
+                                                </ol>
+                                                <div class="page-group">
+                                                    <button type="button" class="btn next" title="이후 페이지">
+                                                        <i class="">이후</i>
+                                                    </button>
+                                                    <button type="button" class="btn end" title="마지막 페이지">
+                                                        <i class="">마지막</i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="g-example-body">
+                                            <div class="g-example-nav mtb20">
+                                                <button class="g-example-btn html-btn">HTML</button>
+                                                <button class="g-example-btn css-btn">CSS</button>
+                                            </div>
+                                        </div>
+                                        <div id="htmlCode" class="g-example-footer hidden">
+                                            <div class="syntaxhighlighter html">
+                                                <table cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="code">
+                                                                <div class="container">
+                                                                    <div class="line number1 index0 alt2">
+                                                                        <pre>
+<code class="html comments">&lt;!-- 하이픈 --&gt;</code>
+<code class="plain">&lt;</code><code class="keyword">ul&nbsp;</code><code class="color1">class</code><code class="plain">=</code><code class="string">"paragraph hyphen"</code><code class="plain">&gt;</code>
+    <code class="plain">&lt;</code><code class="keyword">li&nbsp;</code><code class="plain">&gt;</code>목록 텍스트<code class="plain">&lt;/</code><code class="keyword">li</code><code class="plain">&gt;</code>
+<code class="plain">&lt;/</code><code class="keyword">ul</code><code class="plain">&gt;</code>
+
+<code class="html comments">&lt;!-- 별 --&gt;</code>
+<code class="plain">&lt;</code><code class="keyword">ul&nbsp;</code><code class="color1">class</code><code class="plain">=</code><code class="string">"paragraph star"</code><code class="plain">&gt;</code>
+    <code class="plain">&lt;</code><code class="keyword">li&nbsp;</code><code class="plain">&gt;</code>목록 텍스트<code class="plain">&lt;/</code><code class="keyword">li</code><code class="plain">&gt;</code>
+<code class="plain">&lt;/</code><code class="keyword">ul</code><code class="plain">&gt;</code>
+
+<code class="html comments">&lt;!-- 당구장 --&gt;</code>
+<code class="plain">&lt;</code><code class="keyword">ul&nbsp;</code><code class="color1">class</code><code class="plain">=</code><code class="string">"paragraph bill"</code><code class="plain">&gt;</code>
+    <code class="plain">&lt;</code><code class="keyword">li&nbsp;</code><code class="plain">&gt;</code>목록 텍스트<code class="plain">&lt;/</code><code class="keyword">li</code><code class="plain">&gt;</code>
+<code class="plain">&lt;/</code><code class="keyword">ul</code><code class="plain">&gt;</code>
+</pre>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                        <div id="cssCode" class="g-example-footer hidden">
+                                            <div class="syntaxhighlighter css">
+                                                <table cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="code">
+                                                                <div class="container">
+                                                                    <div class="line number1 index0 alt2"><code
+                                                                            class="comments">/* BADGE */</code>
+                                                                    </div>
+                                                                    <div class="line">
+                                                                        <code class="plain">.paragraph>li {</code>
+                                                                        <code class="keyword">display</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">table</code>
+                                                                        <code class="plain">;}</code>
+                                                                    </div>
+
+                                                                    <div class="line">
+                                                                        <code
+                                                                            class="plain">.paragraph>li:before {</code>
+                                                                        <code class="keyword">content</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">""</code>
+                                                                        <code class="plain">; </code>
+                                                                        <code class="keyword">display</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">table-cell</code>
+                                                                        <code class="plain">; </code>
+                                                                        <code class="keyword">padding-right</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">5px</code>
+                                                                        <code class="plain">;}</code>
+                                                                    </div>
+
+                                                                    <div class="line">
+                                                                        <code
+                                                                            class="plain">.paragraph.hyphen>li::before {</code>
+                                                                        <code class="keyword">content</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">"-"</code>
+                                                                        <code class="plain">;}</code>
+                                                                    </div>
+
+                                                                    <div class="line">
+                                                                        <code
+                                                                            class="plain">.paragraph.star>li::before {</code>
+                                                                        <code class="keyword">content</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">"*"</code>
+                                                                        <code class="plain">;}</code>
+                                                                    </div>
+
+                                                                    <div class="line">
+                                                                        <code
+                                                                            class="plain">.paragraph.bill>li::before {</code>
+                                                                        <code class="keyword">content</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">"※"</code>
+                                                                        <code class="plain">;}</code>
+                                                                    </div>
+
+                                                                </div>
+                                                            </td>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="g-example-container">
+                                    <div class="g-example-header">
+                                        <div class="g-example-preview">
+                                            <div class="paging-list-area style-3">
+                                                <div class="page-group">
+                                                    <button type="button" class="btn prev" title="이전 페이지">
+                                                        <i class="">이전</i>
+                                                    </button>
+                                                </div>
+                                                <ol class="paging">
+                                                    <li class="page-item font num active">1</li>
+                                                    <li class="page-item font num">2</li>
+                                                    <li class="page-item font num">3</li>
+                                                    <li class="page-item font num">4</li>
+                                                    <li class="page-item font num">5</li>
+                                                </ol>
+                                                <div class="page-group">
+                                                    <button type="button" class="btn next" title="이후 페이지">
+                                                        <i class="">이후</i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="g-example-body">
+                                            <div class="g-example-nav mtb20">
+                                                <button class="g-example-btn html-btn">HTML</button>
+                                                <button class="g-example-btn css-btn">CSS</button>
+                                            </div>
+                                        </div>
+                                        <div id="htmlCode" class="g-example-footer hidden">
+                                            <div class="syntaxhighlighter html">
+                                                <table cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="code">
+                                                                <div class="container">
+                                                                    <div class="line number1 index0 alt2">
+                                                                        <pre>
+<code class="html comments">&lt;!-- 하이픈 --&gt;</code>
+<code class="plain">&lt;</code><code class="keyword">ul&nbsp;</code><code class="color1">class</code><code class="plain">=</code><code class="string">"paragraph hyphen"</code><code class="plain">&gt;</code>
+    <code class="plain">&lt;</code><code class="keyword">li&nbsp;</code><code class="plain">&gt;</code>목록 텍스트<code class="plain">&lt;/</code><code class="keyword">li</code><code class="plain">&gt;</code>
+<code class="plain">&lt;/</code><code class="keyword">ul</code><code class="plain">&gt;</code>
+
+<code class="html comments">&lt;!-- 별 --&gt;</code>
+<code class="plain">&lt;</code><code class="keyword">ul&nbsp;</code><code class="color1">class</code><code class="plain">=</code><code class="string">"paragraph star"</code><code class="plain">&gt;</code>
+    <code class="plain">&lt;</code><code class="keyword">li&nbsp;</code><code class="plain">&gt;</code>목록 텍스트<code class="plain">&lt;/</code><code class="keyword">li</code><code class="plain">&gt;</code>
+<code class="plain">&lt;/</code><code class="keyword">ul</code><code class="plain">&gt;</code>
+
+<code class="html comments">&lt;!-- 당구장 --&gt;</code>
+<code class="plain">&lt;</code><code class="keyword">ul&nbsp;</code><code class="color1">class</code><code class="plain">=</code><code class="string">"paragraph bill"</code><code class="plain">&gt;</code>
+    <code class="plain">&lt;</code><code class="keyword">li&nbsp;</code><code class="plain">&gt;</code>목록 텍스트<code class="plain">&lt;/</code><code class="keyword">li</code><code class="plain">&gt;</code>
+<code class="plain">&lt;/</code><code class="keyword">ul</code><code class="plain">&gt;</code>
+</pre>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                        <div id="cssCode" class="g-example-footer hidden">
+                                            <div class="syntaxhighlighter css">
+                                                <table cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="code">
+                                                                <div class="container">
+                                                                    <div class="line number1 index0 alt2"><code
+                                                                            class="comments">/* BADGE */</code>
+                                                                    </div>
+                                                                    <div class="line">
+                                                                        <code class="plain">.paragraph>li {</code>
+                                                                        <code class="keyword">display</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">table</code>
+                                                                        <code class="plain">;}</code>
+                                                                    </div>
+
+                                                                    <div class="line">
+                                                                        <code
+                                                                            class="plain">.paragraph>li:before {</code>
+                                                                        <code class="keyword">content</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">""</code>
+                                                                        <code class="plain">; </code>
+                                                                        <code class="keyword">display</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">table-cell</code>
+                                                                        <code class="plain">; </code>
+                                                                        <code class="keyword">padding-right</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">5px</code>
+                                                                        <code class="plain">;}</code>
+                                                                    </div>
+
+                                                                    <div class="line">
+                                                                        <code
+                                                                            class="plain">.paragraph.hyphen>li::before {</code>
+                                                                        <code class="keyword">content</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">"-"</code>
+                                                                        <code class="plain">;}</code>
+                                                                    </div>
+
+                                                                    <div class="line">
+                                                                        <code
+                                                                            class="plain">.paragraph.star>li::before {</code>
+                                                                        <code class="keyword">content</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">"*"</code>
+                                                                        <code class="plain">;}</code>
+                                                                    </div>
+
+                                                                    <div class="line">
+                                                                        <code
+                                                                            class="plain">.paragraph.bill>li::before {</code>
+                                                                        <code class="keyword">content</code>
+                                                                        <code class="plain">:</code>
+                                                                        <code class="value">"※"</code>
+                                                                        <code class="plain">;}</code>
+                                                                    </div>
+
+                                                                </div>
+                                                            </td>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+
+                </div>
+            </article>
+        </div>
+    </div>
+    <script src="../../assets/js/guide/guide.js"></script>
+</body>
+
+</html>
